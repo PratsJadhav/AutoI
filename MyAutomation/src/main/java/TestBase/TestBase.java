@@ -12,6 +12,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.DataProvider;
 
 
 
@@ -23,6 +24,7 @@ public class TestBase {
 	public FileInputStream fis;
     public static Logger log = null;
 	
+    
 	public void init() throws IOException
 	{
 		log = Logger.getLogger("devpinoyLogger");
@@ -48,6 +50,7 @@ public class TestBase {
 			log.debug("opening chrome browser...");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		else if(browser.equalsIgnoreCase("Firefox"))
 		{
@@ -59,9 +62,9 @@ public class TestBase {
 	
     public void getURL(String url) 
     {
+    	driver.manage().window().maximize();
 		driver.get(url);
-		log.debug("url opened - "+url);
-		driver.manage().window().maximize();
+		log.debug("url opened = "+url);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 }

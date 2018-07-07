@@ -6,6 +6,7 @@
       <class name="TestCases.TestCase01">
         <methods>
           <include name="initialize"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
       </class> <!-- TestCases.TestCase01 -->
     </classes>
