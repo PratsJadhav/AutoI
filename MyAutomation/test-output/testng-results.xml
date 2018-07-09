@@ -2,47 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31469" started-at="2018-07-07T10:16:15Z" finished-at="2018-07-07T10:16:47Z">
+  <suite name="Suite" duration-ms="44614" started-at="2018-07-08T06:42:00Z" finished-at="2018-07-08T06:42:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31469" started-at="2018-07-07T10:16:15Z" finished-at="2018-07-07T10:16:47Z">
+    <test name="Test" duration-ms="44614" started-at="2018-07-08T06:42:00Z" finished-at="2018-07-08T06:42:44Z">
       <class name="TestCases.TestCase01">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:TestCases.TestCase01@7cd62f43]" name="initialize" is-config="true" duration-ms="17766" started-at="2018-07-07T10:16:15Z" finished-at="2018-07-07T10:16:33Z">
+        <test-method status="PASS" signature="initialize()[pri:1, instance:TestCases.TestCase01@42d80b78]" name="initialize" duration-ms="26176" started-at="2018-07-08T06:42:00Z" finished-at="2018-07-08T06:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:TestCases.TestCase01@7cd62f43]" name="login" duration-ms="7132" started-at="2018-07-07T10:16:35Z" data-provider="loginData" finished-at="2018-07-07T10:16:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1a1@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="register()[pri:2, instance:TestCases.TestCase01@42d80b78]" name="register" duration-ms="16324" started-at="2018-07-08T06:42:28Z" finished-at="2018-07-08T06:42:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:TestCases.TestCase01@7cd62f43]" name="login" duration-ms="4491" started-at="2018-07-07T10:16:42Z" data-provider="loginData" finished-at="2018-07-07T10:16:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2a2@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
+        </test-method> <!-- register -->
       </class> <!-- TestCases.TestCase01 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

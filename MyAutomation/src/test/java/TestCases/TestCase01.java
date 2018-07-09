@@ -5,15 +5,20 @@ import java.io.IOException;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import TestBase.TestBase;
 import TestPages.LoginPage;
+import TestPages.addNewUser;
 import Utilities.ExcelReader;
+
+//@Listeners(Utilities.Listener.class)
 
 public class TestCase01 extends TestBase {
 
 	LoginPage login_page;
+	addNewUser add_new;
 	ExcelReader excel;
 	
 	@DataProvider(name="loginData")
@@ -25,13 +30,13 @@ public class TestCase01 extends TestBase {
 		return data;
     	
     }
-	@BeforeTest
+	@Test(priority=1)
 	public void initialize() throws IOException
 	{
 		init();
 	}
 	
-	@Test(priority =1, dataProvider ="loginData")
+/*	@Test(priority =3, dataProvider ="loginData", dependsOnMethods ="register")
 	public void login(String username, String password) throws InterruptedException
 	{
 		login_page = new LoginPage(driver);
@@ -40,4 +45,12 @@ public class TestCase01 extends TestBase {
 		
 		login_page.loginToOrangeHRM(username, password);
 	}
+	*/
+	@Test(priority= 2)
+	public void register()
+	{
+		add_new = new addNewUser(driver);
+		add_new.registration();
+	}
+	
 }
