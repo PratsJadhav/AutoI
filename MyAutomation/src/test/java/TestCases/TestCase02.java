@@ -27,7 +27,10 @@ public class TestCase02 extends TestBase{
 	//	obj.openNewTab();
 	//	obj.scrolling();
 		//obj.fileUpload();
-		
+
+		obj.findBrokenLink();
+		System.out.println("dfgfdg");
+
 	}
 	
 }
