@@ -29,6 +29,8 @@ public class TestCase02 extends TestBase{
 		//obj.fileUpload();
 		obj.findBrokenLink();
 		System.out.println("dfgfdg");
+		
+		System.out.println("fgdfg");
 	}
 	
 }
