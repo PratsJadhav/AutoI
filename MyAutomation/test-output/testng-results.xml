@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44614" started-at="2018-07-08T06:42:00Z" finished-at="2018-07-08T06:42:44Z">
+  <suite name="Suite" duration-ms="24448" started-at="2018-07-09T11:18:24Z" finished-at="2018-07-09T11:18:49Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="44614" started-at="2018-07-08T06:42:00Z" finished-at="2018-07-08T06:42:44Z">
-      <class name="TestCases.TestCase01">
-        <test-method status="PASS" signature="initialize()[pri:1, instance:TestCases.TestCase01@42d80b78]" name="initialize" duration-ms="26176" started-at="2018-07-08T06:42:00Z" finished-at="2018-07-08T06:42:26Z">
+    <test name="Test" duration-ms="24448" started-at="2018-07-09T11:18:24Z" finished-at="2018-07-09T11:18:49Z">
+      <class name="TestCases.TestCase02">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:TestCases.TestCase02@1bce4f0a]" name="initialization" duration-ms="20303" started-at="2018-07-09T11:18:24Z" finished-at="2018-07-09T11:18:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="register()[pri:2, instance:TestCases.TestCase01@42d80b78]" name="register" duration-ms="16324" started-at="2018-07-08T06:42:28Z" finished-at="2018-07-08T06:42:44Z">
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="t()[pri:0, instance:TestCases.TestCase02@1bce4f0a]" name="t" duration-ms="2083" started-at="2018-07-09T11:18:46Z" finished-at="2018-07-09T11:18:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-      </class> <!-- TestCases.TestCase01 -->
+        </test-method> <!-- t -->
+      </class> <!-- TestCases.TestCase02 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -9,7 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.DataProvider;
@@ -67,4 +69,12 @@ public class TestBase {
 		log.debug("url opened = "+url);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
+    
+    public void highlightElement(WebDriver driver, WebElement element)
+    {
+    	JavascriptExecutor js = (JavascriptExecutor)driver;
+    	js.executeScript("arguments[0].setAttribute('style',arguments[1]);", element, "border: 5px solid red;");
+    }
+    
+    
 }

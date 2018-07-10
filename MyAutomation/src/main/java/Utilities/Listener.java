@@ -35,9 +35,25 @@ public class Listener extends TestBase implements ITestListener {
 		
 	}
 
-	public void onTestFailure(ITestResult arg0) {
+	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println("Test Failed ...\n");
+		
+		String filename = new SimpleDateFormat("dd_mm_yy_hh_mm_ss'.png'").format(new Date());
+		String filepath = System.getProperty("user.dir")+"\\Screenshots\\failed"+filename;
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File destFile = new File(filepath);
+		
+		if(!result.isSuccess())
+		{
+			try {
+				FileUtils.copyFile(srcFile, destFile);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
 	}
 
 	public void onTestSkipped(ITestResult arg0) {
