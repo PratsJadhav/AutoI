@@ -34,6 +34,7 @@ public class TestCase01 extends TestBase {
 	public void initialize() throws IOException
 	{
 		init();
+		System.out.println("test case 1 from maven");
 	}
 	
 /*	@Test(priority =3, dataProvider ="loginData", dependsOnMethods ="register")
