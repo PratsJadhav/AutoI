@@ -23,13 +23,6 @@ public class TestCase02 extends TestBase{
 	public void t() throws InterruptedException, IOException
 	{
 		obj = new AlertsAndPopups(driver);
-	//	obj.alertAccept();
-		//obj.alertDismiss();
-	//	obj.popupHandling();
-	//	obj.learnActions();
-	//	obj.openNewTab();
-	//	obj.scrolling();
-		//obj.fileUpload();
 		System.out.println("execution from maven");
 
 	}

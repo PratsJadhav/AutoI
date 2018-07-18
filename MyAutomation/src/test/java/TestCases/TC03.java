@@ -1,12 +1,23 @@
 package TestCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
-public class TC03 {
+import TestBase.TestBase;
+
+public class TC03 extends TestBase{
 
 	@Test
-	public void m1()
+	public void m1() throws IOException
 	{
-		System.out.println("from maven");
+		init();
+		System.out.println("m1 method");
+	}
+	
+	@Test
+	public void m2()
+	{
+		System.out.println("m2 method");
 	}
 }
