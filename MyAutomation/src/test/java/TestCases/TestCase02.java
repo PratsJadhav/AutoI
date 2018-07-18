@@ -2,7 +2,6 @@ package TestCases;
 
 import java.io.IOException;
 
-import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
 import TestBase.TestBase;
@@ -15,8 +14,6 @@ public class TestCase02 extends TestBase{
 	public void initialization() throws IOException
 	{
 		init();
-		int a = 333;
-		double b = a;
 	}
 
 	@Test
@@ -25,12 +22,6 @@ public class TestCase02 extends TestBase{
 		obj = new AlertsAndPopups(driver);
 		System.out.println("execution from maven");
 
-	}
-	
-	@BeforeGroups
-	public void as()
-	{
-		
 	}
 	
 }
