@@ -21,7 +21,7 @@ public class TestCase01 extends TestBase {
 	addNewUser add_new;
 	ExcelReader excel;
 	
-/*	@DataProvider(name="loginData")
+	@DataProvider(name="loginData")
     public String[][] loginDataProvider() throws IOException
     {
 		excel = new ExcelReader();
@@ -30,8 +30,6 @@ public class TestCase01 extends TestBase {
 		return data;
     	
     }
-    
-    */
 	@Test(priority=1)
 	public void initialize() throws IOException
 	{

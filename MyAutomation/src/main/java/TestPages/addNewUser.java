@@ -69,7 +69,7 @@ public class addNewUser extends TestBase{
 	public void registration()
 	{
 		signin_btn.click();
-		input_email.sendKeys("53hsjjsd9dh3@gmail.com");
+		input_email.sendKeys("53hd9dh3@gmail.com");
 		create_btn.click();
 		
 		title.click();
@@ -91,7 +91,6 @@ public class addNewUser extends TestBase{
 		
 		dropdown = new Select(state);
 		dropdown.selectByIndex(3);
-		
 		
 		code.sendKeys("33333");
 		

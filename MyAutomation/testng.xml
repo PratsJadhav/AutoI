@@ -7,8 +7,8 @@
    -->
   <test thread-count="5" name="Test">
    <classes>
-     <class name = "TestCases.TestCase01"/> 
-     <class name = "TestCases.TestCase02"/>
+    <!--  <class name = "TestCases.TestCase01"/> 
+     <class name = "TestCases.TestCase02"/>-->
      <class name ="TestCases.TC03"/>
    </classes>
   </test> <!-- Test -->
